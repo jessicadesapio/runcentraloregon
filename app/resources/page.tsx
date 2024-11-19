@@ -9,7 +9,7 @@ export default function ResourcesPage() {
     <div className="min-h-screen relative">
       <Image
         src="/runningresource.webp"
-        alt="Group of runners on a scenic trail through Central Oregon's high desert landscape"
+        alt="Group of runners on a scenic trail through Central Oregon&apos;s high desert landscape"
         layout="fill"
         objectFit="cover"
         priority
@@ -17,9 +17,9 @@ export default function ResourcesPage() {
         className="z-0"
       />
       <div className="relative z-10 min-h-screen flex flex-col bg-black/40">
-        <header className="bg-primary/70 text-primary-foreground shadow-lg">
+        <header className="bg-primary/90 text-primary-foreground shadow-lg">
           <div className="container mx-auto px-4 py-6">
-            <h1 className="text-3xl font-bold">Run Central Oregon</h1>
+            <h1 className="text-3xl font-bold">Central Oregon Runners</h1>
             <nav className="mt-4">
               <ul className="flex space-x-4">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
@@ -34,7 +34,7 @@ export default function ResourcesPage() {
         <main className="container mx-auto px-4 py-8">
           <h2 className="text-3xl font-bold mb-6 text-white">Runner&apos;s Resources</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
+            <Card className="bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <Users className="mr-2" />
@@ -53,7 +53,7 @@ export default function ResourcesPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
+            <Card className="bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <ShoppingBag className="mr-2" />
@@ -72,7 +72,7 @@ export default function ResourcesPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
+            <Card className="bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <BookOpen className="mr-2" />
@@ -91,7 +91,7 @@ export default function ResourcesPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
+            <Card className="bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <MapPin className="mr-2" />
@@ -113,7 +113,7 @@ export default function ResourcesPage() {
         </main>
 
         <footer className="bg-gray-900/80 text-white text-center py-4 mt-8">
-          <p>&copy; 2024 Run Central Oregon. All rights reserved.</p>
+          <p>&copy; 2024 Central Oregon Runners. All rights reserved.</p>
         </footer>
       </div>
     </div>
