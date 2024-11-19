@@ -9,12 +9,13 @@ interface RoadRun {
   date: string;
   location: string;
   distance: string;
+  externalLink?: string;
 }
 
 const roadRuns: RoadRun[] = [
-  { id: 1, name: "Bend Marathon", date: "April 20, 2024", location: "Bend, Oregon", distance: "Marathon, Half Marathon, 10K, 5K" },
-  { id: 2, name: "Redmond 5K Series", date: "May 1, 2024", location: "Redmond, Oregon", distance: "5K" },
-  { id: 3, name: "Sunriver Half Marathon", date: "June 15, 2024", location: "Sunriver, Oregon", distance: "Half Marathon, 10K, 5K" },
+  { id: 1, name: "Bend Marathon and Half", date: "April 13, 2025", location: "Bend, Oregon", distance: "Marathon, Half Marathon, 10K, 5K", externalLink: "https://www.bend-marathon.com" },
+  { id: 2, name: "Conquor The Canyon", date: "June 7, 2025", location: "Redmond, Oregon", distance: "5K, 10k, Half Marathon", externalLink: "https://bendraces.com/conquer-the-canyon-half-marathon/" },
+  { id: 3, name: "Bend Beer Run", date: "August 30, 2025", location: "Bend, Oregon", distance: "5K with 4 beer stops!", externalLink: "https://thelittlewoody.com/beer-run/" },
 ]
 
 export default function RoadRunsPage() {
@@ -56,12 +57,20 @@ export default function RoadRunsPage() {
                   <p><strong>Date:</strong> {run.date}</p>
                   <p><strong>Location:</strong> {run.location}</p>
                   <p><strong>Distance:</strong> {run.distance}</p>
-                  <Button className="mt-4 w-full">
-                    <Link href={`/road-runs/${run.id}`}>View Details</Link>
+                  {run.externalLink ? (
+                  <Button asChild className="mt-4 w-full">
+                 <a href={run.externalLink} target="_blank" rel="noopener noreferrer">
+                  View Details
+                  </a>
                   </Button>
+                  ) : (
+                    <Button className="mt-4 w-full">
+                      <Link href={`/road-runs/${run.id}`}>View Details</Link>
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
-            ))}
+                ))}
           </div>
         </main>
 

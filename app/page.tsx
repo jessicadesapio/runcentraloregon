@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { ExternalLink } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
 
         <main className="flex-grow container mx-auto px-4 py-8 text-white">
           <div className="max-w-3xl mb-12">
-            <h2 className="text-5xl font-bold mb-6">Welcome to Run Central Oregon</h2>
+            <h2 className="text-5xl font-bold mb-6">Welcome to Central Oregon Runners</h2>
             <p className="text-xl">Your gateway to the best running experiences in Central Oregon&apos;s breathtaking landscapes.</p>
           </div>
 
@@ -42,7 +43,15 @@ export default function Home() {
               <CardContent>
                 <ul className="list-disc pl-5 text-gray-700">
                   <li>Smith Rock Ascent - May 15, 2024</li>
-                  <li>Bend Trail Series - June 5, 2024</li>
+                  <li>
+                    Bend Trail Series - June 5, 2024
+                    <Button asChild variant="link" className="p-0 h-auto font-normal ml-2">
+                      <a href="https://gobeyondracing.com/races/bend-trail-series/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+                        View Details
+                        <ExternalLink className="ml-1 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </li>
                   <li>Sisters Mountain Marathon - July 10, 2024</li>
                 </ul>
                 <Button className="mt-4 w-full">

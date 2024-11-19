@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ExternalLink } from 'lucide-react'
 
 interface TrailRun {
   id: number;
@@ -9,12 +10,16 @@ interface TrailRun {
   date: string;
   location: string;
   distance: string;
+  externalLink?: string;
 }
 
 const trailRuns: TrailRun[] = [
-  { id: 1, name: "Smith Rock Ascent", date: "May 15, 2024", location: "Smith Rock State Park", distance: "15K, 50K" },
-  { id: 2, name: "Bend Trail Series", date: "June 5, 2024", location: "Phil's Trail Complex", distance: "5K, 10K" },
-  { id: 3, name: "Sisters Mountain Marathon", date: "July 10, 2024", location: "Sisters, Oregon", distance: "Marathon, Half Marathon" },
+  { id: 1, name: "Peterson Ridge Rumble", date: "April 13, 2025", location: "Sisters, Oregon", distance: "20 Miles, Marathon, 40 Miles", externalLink: "https://ultrasignup.com/register.aspx?did=120129" },
+  { id: 2, name: "Bend Trail Series", date: "April 17 - July 17, 2025", location: "Trail Locations TBD", distance: "Ranging from 4-7 Miles", externalLink: "https://www.bendtrailseries.com" },
+  { id: 3, name: "Happy Girls Sisters", date: "October 25, 2025", location: "Sisters, Oregon", distance: "5K, 10K, Half Marathon", externalLink: "https://runsignup.com/Race/OR/Sisters/2024HappyGirlsSisters" },
+  { id: 4, name: "Happy Girls Bend", date: "May 10, 2025", location: "Bend, Oregon", distance: "5k, 10k, Half Marathon", externalLink: "https://thelittlewoody.com/beer-run/" },
+  { id: 5, name: "Salmon Run", date: "April 19, 2025", location: "Bend, Oregon", distance: "5k, 10k, Half Marathon", externalLink: "https://bendraces.com/salmon-run/" },
+  { id: 6, name: "Haulin' Aspen", date: "August 9, 2025", location: "Wanoga Sno Park", distance: "Half As - 6.5 miles, Half Marathon, Marathon", externalLink: "https://bendraces.com/haulin-aspen/" }
 ]
 
 export default function TrailRunsPage() {
@@ -50,15 +55,25 @@ export default function TrailRunsPage() {
             {trailRuns.map((run) => (
               <Card key={run.id} className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
                 <CardHeader>
-                  <CardTitle>{run.name}</CardTitle>
+                  <CardTitle className="flex items-center justify-between">
+                    {run.name}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p><strong>Date:</strong> {run.date}</p>
                   <p><strong>Location:</strong> {run.location}</p>
                   <p><strong>Distance:</strong> {run.distance}</p>
-                  <Button className="mt-4 w-full">
-                    <Link href={`/trail-runs/${run.id}`}>View Details</Link>
-                  </Button>
+                  {run.externalLink ? (
+                    <Button asChild className="mt-4 w-full">
+                      <a href={run.externalLink} target="_blank" rel="noopener noreferrer">
+                        View Details
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button className="mt-4 w-full">
+                      <Link href={`/trail-runs/${run.id}`}>View Details</Link>
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
