@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, ShoppingBag, Users, BookOpen } from 'lucide-react'
 
@@ -32,7 +32,7 @@ export default function ResourcesPage() {
         </header>
 
         <main className="container mx-auto px-4 py-8">
-          <h2 className="text-3xl font-bold mb-6 text-white">Runner's Resources</h2>
+          <h2 className="text-3xl font-bold mb-6 text-white">Runner&apos;s Resources</h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
               <CardHeader>
@@ -101,7 +101,7 @@ export default function ResourcesPage() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>Deschutes River Trail</li>
-                  <li>Phil's Trail Complex</li>
+                  <li>Phil&apos;s Trail Complex</li>
                   <li>Smith Rock State Park Loops</li>
                 </ul>
                 <Button className="mt-4 w-full">
