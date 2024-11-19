@@ -1,14 +1,7 @@
 import type { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**.public.blob.vercel-storage.com',
-      },
-    ],
-  },
+const config: NextConfig = {
+  transpilePackages: ['lucide-react']
 }
 
-export default nextConfig
+export default config
