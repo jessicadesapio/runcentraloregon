@@ -16,7 +16,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col min-h-screen bg-black/40">
         <header className="bg-primary/90 text-primary-foreground shadow-lg">
           <div className="container mx-auto px-4 py-6">
-            <h1 className="text-3xl font-bold">Run Central Oregon</h1>
+            <h1 className="text-3xl font-bold">Central Oregon Runners</h1>
             <nav className="mt-4">
               <ul className="flex space-x-4">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
@@ -30,12 +30,12 @@ export default function Home() {
 
         <main className="flex-grow container mx-auto px-4 py-8 text-white">
           <div className="max-w-3xl mb-12">
-            <h2 className="text-5xl font-bold mb-6">Welcome to Run Central Oregon</h2>
-            <p className="text-xl">Your gateway to the best running experiences in Central Oregon&apos;s breathtaking landscapes.</p>
+            <h2 className="text-5xl font-bold mb-6">Welcome to Central Oregon Runners</h2>
+            <p className="text-xl">Your gateway to the best running experiences in Central Oregon's breathtaking landscapes.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-white/50 backdrop-blur-sm transition-all hover:bg-white/80">
+            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
               <CardHeader>
                 <CardTitle className="text-gray-800">Upcoming Trail Runs</CardTitle>
               </CardHeader>
@@ -51,7 +51,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/50 backdrop-blur-sm transition-all hover:bg-white/80">
+            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
               <CardHeader>
                 <CardTitle className="text-gray-800">Upcoming Road Runs</CardTitle>
               </CardHeader>
