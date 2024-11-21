@@ -43,13 +43,37 @@ export default function ResourcesPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Bend Running Club</li>
-                  <li>Central Oregon Running Klub (CORK)</li>
-                  <li>Sisters Trail Runners</li>
-                </ul>
-                <Button className="mt-4 w-full">
-                  <Link href="#">Find a Club</Link>
-                </Button>
+                <li>
+                    <a 
+                      href="https://www.footzonebend.com/content/community-runs" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-800 hover:underline"
+                    >
+                      FootZone Community Runs
+                    </a>
+                  </li>
+                  <li>
+                    <a 
+                      href="https://corkclub.org" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-800 hover:underline"
+                    >
+                      Central Oregon Running Klub (CORK)
+                    </a>
+                  </li>
+                 <li>
+                  <a
+                  href="https://www.facebook.com/groups/301993255318992/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-800 hover:underline"
+                  >
+                    Sisters Country Running Club
+                    </a>
+                    </li>
+                    </ul>
               </CardContent>
             </Card>
 
@@ -62,7 +86,16 @@ export default function ResourcesPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>FootZone Bend</li>
+                <li>
+                    <a 
+                      href="https://www.footzonebend.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-800 hover:underline"
+                    >
+                      FootZone Bend
+                    </a>
+                  </li>
                   <li>Fleet Feet Bend</li>
                   <li>REI Bend</li>
                 </ul>
