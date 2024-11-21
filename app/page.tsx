@@ -31,8 +31,8 @@ export default function Home() {
 
         <main className="flex-grow container mx-auto px-4 py-8 text-white">
           <div className="max-w-3xl mb-12">
-            <h2 className="text-5xl font-bold mb-6">Welcome to Central Oregon Runners</h2>
-            <p className="text-xl">Your gateway to the best running experiences in Central Oregon&apos;s breathtaking landscapes.</p>
+            <h2 className="text-5xl font-bold mb-6">Welcome to Run Central Oregon</h2>
+            <p className="text-xl">Your gateway to running experiences in Central Oregon&apos;s breathtaking landscapes.</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
