@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, ShoppingBag, Users, BookOpen } from 'lucide-react'
+import { MapPin, ShoppingBag, Users } from 'lucide-react'
 
 export default function ResourcesPage() {
   return (
@@ -20,7 +20,7 @@ export default function ResourcesPage() {
       <div className="relative z-10 min-h-screen flex flex-col bg-black/40">
         <header className="bg-primary/90 text-primary-foreground shadow-lg">
           <div className="container mx-auto px-4 py-6">
-            <h1 className="text-3xl font-bold">Run Central Oregon</h1>
+            <h1 className="text-3xl font-bold">Central Oregon Runners</h1>
             <nav className="mt-4">
               <ul className="flex space-x-4">
                 <li><Link href="/" className="hover:underline">Home</Link></li>
@@ -44,7 +44,7 @@ export default function ResourcesPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                <li>
+                  <li>
                     <a 
                       href="https://www.footzonebend.com/content/community-runs" 
                       target="_blank" 
@@ -64,17 +64,17 @@ export default function ResourcesPage() {
                       Central Oregon Running Klub (CORK)
                     </a>
                   </li>
-                 <li>
-                  <a
-                  href="https://www.facebook.com/groups/301993255318992/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-800 hover:underline"
-                  >
-                    Sisters Country Running Club
+                  <li>
+                    <a
+                      href="https://www.facebook.com/groups/301993255318992/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-800 hover:underline"
+                    >
+                      Sisters Country Running Club
                     </a>
-                    </li>
-                    </ul>
+                  </li>
+                </ul>
               </CardContent>
             </Card>
 
@@ -87,7 +87,7 @@ export default function ResourcesPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                <li>
+                  <li>
                     <a 
                       href="https://www.footzonebend.com" 
                       target="_blank" 
@@ -109,10 +109,10 @@ export default function ResourcesPage() {
                   </li>
                   <li>
                     <a
-                    href="https://stores.dickssportinggoods.com/or/bend/676/?seo=localpack"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-800 hover:underline"
+                      href="https://stores.dickssportinggoods.com/or/bend/676/?seo=localpack"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-800 hover:underline"
                     >
                       Dick&apos;s Sporting Goods Bend
                     </a>
@@ -130,7 +130,7 @@ export default function ResourcesPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                <li>
+                  <li>
                     <a 
                       href="https://www.bendparksandrec.org/trail/deschutes-river-trail-old-mill-reach/" 
                       target="_blank" 
