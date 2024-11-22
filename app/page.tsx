@@ -35,30 +35,18 @@ export default function Home() {
             <p className="text-xl">Your gateway to running experiences in Central Oregon&apos;s breathtaking landscapes.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
-              <CardHeader>
-                <CardTitle className="text-gray-800">Upcoming Trail Runs</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="list-disc pl-5 text-gray-700">
+          <div className="grid gap-6 md:grid-cols-2">
+              <Card className="bg-white/70 hover:bg-white/90 transition-colors duration-200 p-6">
+                <h3 className="text-2xl font-bold mb-4">Upcoming Trail Runs</h3>
+                <ul className="space-y-2">
                   <li>Smith Rock Ascent - May 15, 2024</li>
-                  <li>
-                    Bend Trail Series - June 5, 2024
-                    <Button asChild variant="link" className="p-0 h-auto font-normal ml-2">
-                      <a href="https://gobeyondracing.com/races/bend-trail-series/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-                        View Details
-                        <ExternalLink className="ml-1 h-4 w-4" />
-                      </a>
-                    </Button>
-                  </li>
+                  <li>Bend Trail Series - June 5, 2024</li>
                   <li>Sisters Mountain Marathon - July 10, 2024</li>
                 </ul>
-                <Button className="mt-4 w-full">
+                <Button asChild className="w-full mt-4 bg-primary text-primary-foreground hover:bg-primary/90">
                   <Link href="/trail-runs">View All Trail Runs</Link>
                 </Button>
-              </CardContent>
-            </Card>
+              </Card>
 
             <Card className="bg-white/60 backdrop-blur-sm transition-all hover:bg-white/80">
               <CardHeader>
